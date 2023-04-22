@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block title %}Resume Screening{% endblock %}
+{% block styleInclude %}
+<style>
+      @media screen and (min-width: 992px) {
+        a.sign_in {
+            width:60%;
+        }
+    }
+    @media screen and (min-width: 1300px) {
+        a.sign_in {
+            width:40%;
+        }
+    }
+    @media screen and (min-width: 300px) {
+        .main_card{
+            margin-top:30px;
+        }
+    }
+    
+    .sign_in{
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none; /* remove underline from anchors */
+        background-color: #dd4b39;
+        color: white;
+    }
+    
+    .hr_login{
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none; /* remove underline from anchors */
+        background-color: #007bff;
+        color: white;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+    
+/* @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); */
+
+.wrapper.ten {
+background-color: transparent;
+}
+.bounce {
+font-size: 5rem;
+width: 100%;
+margin: 3rem auto;
+display: inline-flex;
+justify-content: center;
+-webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+}
+.bounce span {
+display: inline-flex;
+/* color: purple; */
+background: linear-gradient(to left,
+                blue ,purple);
+                color: transparent;
+                -webkit-background-clip: text;
+
+font-family: "Play", Stencil;
+animation: bounce 2s infinite;
+}
+@keyframes bounce {
+0%,
+50%,
+100% {
+    transform: translateY(0);
+}
+25% {
+    transform: translateY(-20px);
+}
+}
+.ten span:nth-of-type(1) {
+animation-delay: 0.1s;
+/* color: purple; */
+}
+.ten span:nth-of-type(2) {
+animation-delay: 0.2s;
+/* color: white; */
+}
+.ten span:nth-of-type(3) {
+animation-delay: 0.3s;
+/* color: purple; */
+}
+.ten span:nth-of-type(4) {
+animation-delay: 0.4s;
+/* color: white; */
+}
+.ten span:nth-of-type(5) {
+animation-delay: 0.5s;
+/* color: black; */
+}
+.ten span:nth-of-type(6) {
+animation-delay: 0.6s;
+/* color: white; */
+}
+
+.ten span:nth-of-type(7) {
+animation-delay: 0.7s;
+/* color: black; */
+}
+.ten span:nth-of-type(8) {
+animation-delay: 0.8s;
+/* color: white; */
+}
+.ten span:nth-of-type(9) {
+animation-delay: 0.1s;
+/* color: black; */
+}
+.ten span:nth-of-type(10) {
+animation-delay: 0.2s;
+/* color: white; */
+}
+.ten span:nth-of-type(11) {
+animation-delay: 0.3s;
+/* color: black; */
+}
+.ten span:nth-of-type(12) {
+animation-delay: 0.5s;
+/* color: white; */
+}
+.ten span:nth-of-type(13) {
+animation-delay: 0.6s;
+/* color: black; */
+}
+.ten span:nth-of-type(14) {
+animation-delay: 0.7s;
+/* color: white; */
+}
+.ten span:nth-of-type(15) {
+animation-delay: 0.8s;
+/* color: black; */
+}
+
+</style>
+{% endblock %}
+{% block content %}
+<body  style="background-image: url(static/images/WhatsApp.jpeg); background-repeat: no-repeat; background-size: cover; " hight="120px" width="120px" bgproperties="fixed" >
+
+<div class='container-fluid'>
+    <div class="container">
+    <div class='row'>
+        <div class="col-md-6 col-xs-12 main_card" style="margin-top:50px;z-index:10;">
+            <div class="wrapper ten">
+                <div>
+                    <h3 class="bounce">
+                        <span>R</span>
+                        <span>E</span>
+                        <span>S</span>
+                        <span>U</span>
+                        <span>M</span>
+                        <span>E</span>
+                        <span>-</span>
+                        <span>S</span>
+                        <span>C</span>
+                        <span>R</span>
+                        <span>E</span>
+                        <span>E</span>
+                        <span>N</span>
+                        <span>E</span>
+                        <SPAN>R</SPAN>
+                    </h3>
+                </div>
+            </div>
+            <a href="/login" class="btn btn-lg btn-danger mt-5 sign_in mx-auto d-block" style="z-index:10;"><i class="fab fa-google me-4"></i>Candidate Login</a>
+            <a href="/hrlogin" class="btn btn-lg btn-danger mt-5 sign_in mx-auto d-block" style="z-index:10;"><i class="fas fa-sign-in-alt"></i>   HR Login</a>
+        </div>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_L2JFcFmkYl.json"  background="transparent"  speed="2"  style="width: 600px; height: 550px; padding-left:150px ;" loop control autoplay ></lottie-player>
+        <!-- <div class="col-md-6 col-xs-12">
+            <img class="img-fluid mx-auto d-block" src="{{ url_for('static',filename='images/re.png') }}"/>
+        </div> -->
+    </div>
+</div>
+</body>
+
+{% endblock %}
