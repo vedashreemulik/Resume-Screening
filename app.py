@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 app.secret_key = "Resume_sceening"
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
-GOOGLE_CLIENT_ID = "CLIENT ID"
+GOOGLE_CLIENT_ID = "100201399282-15abfgub6i37i435lh2a9vimv7be47tt.apps.googleusercontent.com"
 
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 flow = Flow.from_client_secrets_file(
@@ -34,7 +34,7 @@ flow = Flow.from_client_secrets_file(
 
 UPLOAD_FOLDER = 'static/resumes'
 app.config['UPLOAD_FOLDER']= UPLOAD_FOLDER
-app.config['MONGO_URI'] = "mongodb+srv://USERNAME:PASSWORD@cluster0.fehh90t.mongodb.net/DBNAME?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = "mongodb+srv://Vedashree:202001@cluster0.fehh90t.mongodb.net/resumedb1?retryWrites=true&w=majority"
 
 mongo.init_app(app)
 resumeFetchedData = mongo.db.resumeFetchedData
